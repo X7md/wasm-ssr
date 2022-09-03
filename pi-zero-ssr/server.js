@@ -11,13 +11,12 @@ const renderer = props => {
   const content = render(<App url={props.url} />);
 
   console.log(`<!DOCTYPE html>
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <title>Wasm Labs | VMware OCTO</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script type="module" crossorigin src="/assets/index.js"></script>
         <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
-        <link rel="stylesheet" href="/assets/index.css">
       </head>
       <body>
         <div id="app">${content}</div>
